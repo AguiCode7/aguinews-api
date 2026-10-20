@@ -1,5 +1,43 @@
+# Compilación de .NET
 bin/
 obj/
-.env
-*.user
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# IDEs y editores
 .vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# Secretos y configuración local (nunca al repositorio)
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.key
+
+# Pruebas y cobertura
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+# Paquetes NuGet
+*.nupkg
+packages/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
