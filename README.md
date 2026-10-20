@@ -3,6 +3,7 @@
 API en **.NET 10** con **Clean Architecture** en 3 capas y **PostgreSQL**, que guarda los resúmenes de noticias que genera el bot de **n8n**. Protegida con API key.
 
 ▶️ **Video paso a paso:** [API en .NET con Clean Architecture y PostgreSQL + n8n](https://youtu.be/CIM9Qja3Xow)
+
 ⬅️ Video anterior (el bot de noticias en n8n): [youtu.be/VuJmM_N0J8k](https://youtu.be/VuJmM_N0J8k) · Flujo: [n8n-daily-news-bot](https://github.com/AguiCode7/n8n-daily-news-bot)
 
 ## Cómo funciona
