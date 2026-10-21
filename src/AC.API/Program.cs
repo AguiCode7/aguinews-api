@@ -12,6 +12,7 @@ builder.Services.Configure<AppConfig>(
 builder.Services.AddCore();
 builder.Services.AddInfrastructure(builder.Configuration);
 
+builder.Services.AddDashboardCors(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
@@ -27,6 +28,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionHandler();
+app.UseCors(CorsExtensions.DashboardPolicy);
 app.UseMiddleware<ApiKeyAuthorizer>();
 app.MapControllers();
 

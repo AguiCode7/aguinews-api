@@ -8,4 +8,7 @@ public class AppConfig
 
     public string ApiKey { get; set; } = string.Empty;
     public int MaxSummariesPerQuery { get; set; } = 50;
+
+    // Orígenes que pueden leer la API desde el navegador (CORS).
+    public string[] AllowedOrigins { get; set; } = [];
 }
